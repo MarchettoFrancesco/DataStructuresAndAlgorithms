@@ -5,8 +5,11 @@ public class BinarySearch {
         System.out.println(searchIteration(Aordinato, 8));
     }
 
-
-    // RICORSIONE
+    /*
+    Binary Search
+    gives the position of a k element in an array, if it isn't in the array returns -1
+     */
+    // RICORSIONE not in place O(logn) but space has the stack of calls may reach logn
     public static int BinarySearch(int A[], int k){ // A ordinato
         if (k >= A[A.length/2]){
             return searchRecursion( A, k, A.length/2, A.length-1 );
@@ -29,7 +32,7 @@ public class BinarySearch {
         }
     }
 
-    // ITERAZIONE
+    // ITERAZIONE inplace O(logn) extra space O(1)
 
     public static int searchIteration(int A[], int k){
         int a = 0, b = A.length-1, risultato = 0, media;

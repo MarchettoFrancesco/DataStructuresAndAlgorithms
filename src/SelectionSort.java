@@ -9,7 +9,7 @@ public class SelectionSort {
         }
 
     }
-    // complessità sempre O(n^2) ma n swaps
+    // complexity always O(n^2) ma n swaps
     public static int[] Selection(int[] A){
         int key = 0;
         for (int i = 0; i<A.length-1; i++){

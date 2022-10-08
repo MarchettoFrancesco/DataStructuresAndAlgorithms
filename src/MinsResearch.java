@@ -6,6 +6,13 @@ public class MinsResearch {
         int[] a ={2,1,3};
         System.out.println(MinsResearch(a));
     }
+
+    /*
+    Minimum and second minimum research
+     precondition given an array of numbers, order not important
+     post the algo returns the min and sec. min
+
+     */
     public static String MinsResearch(int[] A){
         int min1 = A[0];
         int min2 = A[1];

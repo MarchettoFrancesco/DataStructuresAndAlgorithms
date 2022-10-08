@@ -8,10 +8,13 @@ public class MajorityElement {
     /*
     Boyer Moore Voting Algorithm expanded to every case
 
-    @param precondition: array of numbers representing groups, can be unordered, and repeated
-    @param post: returns -1 if there is no 50% +1 and returns the group number if it exists
+    precondition: array of numbers representing groups, can be unordered, and repeated
+    post: returns -1 if there is no 50% +1 and returns the group number if it exists
 
-    expanded with boyer moore, with a check, if the major is more than half of the array size then the major is true
+    @param count number of times a group is voted
+    @param major the group that has the most votes
+
+    expanded boyer moore, with a check, if the major is more than half of the array size then the major is true
     if not return -1
 
      */
