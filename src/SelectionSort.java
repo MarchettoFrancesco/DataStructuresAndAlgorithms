@@ -10,6 +10,12 @@ public class SelectionSort {
 
     }
     // complexity always O(n^2) ma n swaps
+
+    /**
+     * 
+     * @param A Array of ints, can be unordered
+     * @return ordered array, finds the minimum in an inside group and moves it to the left multiple times
+     */
     public static int[] Selection(int[] A){
         int key = 0;
         for (int i = 0; i<A.length-1; i++){

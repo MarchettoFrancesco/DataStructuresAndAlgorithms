@@ -2,18 +2,17 @@ public class MinsResearch {
 
 
     public static void main(String[] args) {
-        int[] s = {1,4,5,2,6,7,8,9,3};
+        // int[] s = {1,4,5,2,6,7,8,9,3};
         int[] a ={2,1,3};
-        System.out.println(MinsResearch(a));
+        System.out.println(MinsResearchMethod(a));
     }
 
-    /*
-    Minimum and second minimum research
-     precondition given an array of numbers, order not important
-     post the algo returns the min and sec. min
-
-     */
-    public static String MinsResearch(int[] A){
+     /**
+      * Minimum and second minimum research
+      * @param A given an array of numbers, order not important
+      * @return the algo returns the min and sec. min
+      */
+    public static String MinsResearchMethod(int[] A){
         int min1 = A[0];
         int min2 = A[1];
         int i = 2;

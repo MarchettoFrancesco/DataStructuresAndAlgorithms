@@ -10,7 +10,7 @@ public class BinarySearch {
     gives the position of a k element in an array, if it isn't in the array returns -1
      */
     // RICORSIONE not in place O(logn) but space has the stack of calls may reach logn
-    public static int BinarySearch(int A[], int k){ // A ordinato
+    public static int BinarySearchMethod(int A[], int k){ // A ordinato
         if (k >= A[A.length/2]){
             return searchRecursion( A, k, A.length/2, A.length-1 );
         } else {
@@ -35,7 +35,7 @@ public class BinarySearch {
     // ITERAZIONE inplace O(logn) extra space O(1)
 
     public static int searchIteration(int A[], int k){
-        int a = 0, b = A.length-1, risultato = 0, media;
+        int a = 0, b = A.length-1, media;
 
         while (a<b){
             media = (A.length % 2 == 0)?  a+b/2 : (a+b+1)/2;
