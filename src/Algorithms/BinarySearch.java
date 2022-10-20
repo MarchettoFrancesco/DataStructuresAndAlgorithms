@@ -1,3 +1,5 @@
+package Algorithms;
+
 public class BinarySearch {
     //dato A ordinato e k intero trovare k in A O(log n)
     public static void main(String[] args) {
@@ -17,7 +19,7 @@ public class BinarySearch {
 
     // RICORSIONE not in place O(logn) but space has the stack of calls may reach logn
     /***
-     * Boolean BinarySearch
+     * Boolean Algorithms.BinarySearch
      * @param A
      * @param k number to search
      * @param a start index, must be 0<=a<=b

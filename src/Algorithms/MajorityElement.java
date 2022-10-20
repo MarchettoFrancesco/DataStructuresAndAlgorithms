@@ -1,3 +1,5 @@
+package Algorithms;
+
 public class MajorityElement {
     public static void main(String[] args) {
         int[] risultatoElezioni = {1,1,2,2,1,3,3,2,2,2,2};
