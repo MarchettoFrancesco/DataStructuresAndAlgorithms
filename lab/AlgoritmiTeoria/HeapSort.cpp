@@ -10,6 +10,14 @@
 
  // compiled with g++ -std=c++11 HeapSort.cpp dataStructures/MaxHeap.cpp
 
+
+ /*
+ HeapSort prende tempo theta(nlogn) sempre, non è stabile e non è in place
+
+ nlogn perchè ho un ciclo for con heapify, nel peggiore dei casi faccio n volte heapify che costa logn -> nlogn
+ heapify è logn perchè fa i confronti col genitore facendo salti di i/2
+ */
+
  MaxHeap* buildHeap(vector<int> &arr){
      MaxHeap* MaxHeapD = new MaxHeap();
      for (int i = 0; i < arr.size(); i++)
@@ -52,7 +60,7 @@
      PriorityQueue->removeMax();
      PriorityQueue->printHeap();
      */
-     vector<int> array = {10, 8 ,7,9,2,1,3,4,22};
+     vector<int> array = {10,8,7,9,2,1,3,4,22};
      cout << "Il tuo array è:" << endl;
      printArray(array);
 
@@ -60,7 +68,7 @@
      cout << "Il tuo array ordinato è:" << endl;
      for (int i = 1; i < array.size(); i++)
      {
-          cout << array[i] <<endl;
+          cout << array[i] << endl;
      }
 
      vector<int> array2 = {1,15,2,4,77,8,3};
@@ -68,9 +76,10 @@
      printArray(array2);
 
      array2 = HeapSort(array2);
+     cout << "Il tuo array ordinato è:" << endl;
      for (int i = 1; i < array2.size(); i++)
      {
-          cout << array2[i] <<endl;
+          cout << array2[i] << endl;
      }
 
 

@@ -29,7 +29,7 @@ istream &operator >> (istream &in, vector<int> &vec) {
 
 /*
 Insertion Sort, algoritmo di ordinamento, complessità lineare nel caso migliore e quadratica nel caso peggiore
-
+E' inplace e stabile 
 */
 
 void InsertionSort(int A[], int n){

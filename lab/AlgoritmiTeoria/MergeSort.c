@@ -7,6 +7,10 @@
     merge, tot di cicli for, alloco un nuovo vettore di dimensione q-p+1, 
     piazzo i su p, j su r e k all’inizio del vettore, for su k e copio in 
     B[j] il più piccolo tra A[i] e A[j], secondo for  su k, copio b[k] in A[p-1+k]
+
+
+
+    non in place, sempre tempo nlogn
     
 */
 void Merge(int A[], int p, int q, int r);

@@ -26,6 +26,11 @@ istream &operator >> (istream &in, vector<int> &vec) {
     return in;
 }
 
+/*
+In place, sempre tempo theta n^2 (for innestati), non stabile sposta il minimo 
+
+*/
+
 void SelectionSort(int A[], int n){
 
     int key = 0;

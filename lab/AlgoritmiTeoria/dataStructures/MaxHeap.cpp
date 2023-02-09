@@ -11,11 +11,11 @@
  class MaxHeap {
     private:
          
-         double parent(int i) {return floor(i/2);};
-         int left(int i){return 2*i; };
-         int right(int i){return 2*i+1;};
+         double parent(int i) const {return floor(i/2);};
+         int left(int i) const {return 2*i; };
+         int right(int i) const {return 2*i+1;};
     public:
-    int _size ;
+    int _size = 0 ;
          vector<int> vect = {-1};
         bool isEmpty() const {return _size == 0;};
         int getMax() const{return vect[1];};
@@ -87,7 +87,6 @@
      for (int i = 0; i < 1+_size; i++)
      {
           cout << vect[i] << endl;
-          cout << "\n";
      }
      
  }
@@ -96,7 +95,6 @@
      for (int i = 0; i < arr.size(); i++)
      {
           cout << arr[i] << endl;
-          cout << "\n";
      }
      
  }
