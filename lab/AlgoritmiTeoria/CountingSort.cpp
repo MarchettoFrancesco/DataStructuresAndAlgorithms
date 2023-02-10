@@ -7,7 +7,7 @@ using namespace std;
  * Lavora in theta(n+max) -> theta(n) ma solo nella condizione che l'input soddisfi:
  * arr[0-max] -> max O(n)
 */
-vector<int> countingSort(vector<int> &arr, int max){
+vector<int> countingSort(vector<int> arr, int max){
     vector<int> c(max);
     vector<int> b(arr.size());
     for (int j = 0; j <= max; j++)
